@@ -1,0 +1,47 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+footer{
+    @include centrarContenidoFlex();
+    margin-top: 50px;
+    background-color: $gris;
+    padding: 50px 0px;
+
+    .bg-dark{
+        font-size: 13.5px;
+    }
+
+    .fw-bold{
+        font-size: 15px;
+    }
+
+    a{
+        color: black;
+    }
+
+    .imagenes{
+        width: 80px;
+    }
+
+    .imagenesSeguro{
+        width: 50px;
+    }
+
+    .pequeno{
+        font-size: 12px;
+    }
+
+    .grisClaro{
+        color: rgb(148, 148, 148);
+    }
+
+    .fila{
+        margin-top: -5px;
+    }
+
+    .masPequeno{
+
+        font-size: 10px;
+    }
+
+}

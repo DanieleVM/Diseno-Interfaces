@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/boostrap/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Sprinter</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="fixed-top row">
+            <!-- Primera parte cabezera -->
+            <div class="filaVerdeClaro">
+                RECÍBELO ANTES DE SAN VALENTÍN +info
+            </div>
+            <div class="filaVerdeOscuro">
+                <div class="envios">
+                    Envíos GRATIS a tienda + info | Entrega mismo día + info
+                </div>
+                <div class="cuentas">
+                    <div class="desplegable dropdown me-2">
+                        <a class="btn btn-secondary btn-success " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person fs-5"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <button id="inicioSesion" class="fs-5">Iniciar Sesion</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <span class="text-success">¿Nuevo Cliente? <span class="gris">Registrate ahora</span></span> 
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item gris fs-5 mt-2" href="#">Busca tu pedido</a></li>
+                            <li><a class="dropdown-item gris fs-5 mt-2" href="#">Sprinter Club</a></li>
+                            <li><a class="dropdown-item gris fs-5 mt-2" href="#">Sprinter Pass</a></li>
+                            <li><a class="dropdown-item gris fs-5 mt-2" href="#">Ayuda y Contacto</a></li>
+                        </ul>
+                    </div>
+                    <a href="#"><i class="bi bi-heart"></i></a>
+                    <a href="#"><i class="bi bi-bag"></i></a>
+                </div>
+            </div>
+            <div class="logoBuscador">
+                <div class="fila">
+                    <div class="logo">
+                        <img src="img/logoSprinter.jpg" alt="">
+                    </div>
+                    <div class="buscador">
+                        <input type="text" placeholder="¿Que buscas?" name="" id="">
+                        <a href="#"><i class="bi bi-search border border-0 border-bottom border-dark fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="categorias">
+                    <div class="fila">
+                        <ul>
+                            <li>
+                                / HOMBRE
+                                <ul class="desplegable">
+                                    <li>Zapatillas</li>
+                                    <li>Sudaderas</li>
+                                    <li>Gorras</li>
+                                    <li>Zapatos</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                / MUJER
+                                <ul class="desplegable">
+                                    <li>Zapatillas</li>
+                                    <li>Sudaderas</li>
+                                    <li>Gorras</li>
+                                    <li>Zapatos</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                / NIÑO
+                                <ul class="desplegable">
+                                    <li>Zapatillas</li>
+                                    <li>Sudaderas</li>
+                                    <li>Gorras</li>
+                                    <li>Zapatos</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                / NIÑA
+                                <ul class="desplegable">
+                                    <li>Zapatillas</li>
+                                    <li>Sudaderas</li>
+                                    <li>Gorras</li>
+                                    <li>Zapatos</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                / REBAJAS
+                                <ul class="desplegable">
+                                    <li>Zapatillas</li>
+                                    <li>Sudaderas</li>
+                                    <li>Gorras</li>
+                                    <li>Zapatos</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="categoriasPequenas">
+                    <ul>
+                        <li>
+                            Zapatillas <span>|</span>
+                            <ul class="desplegable">
+                                <li>Zapatillas</li>
+                                <li>Sudaderas</li>
+                                <li>Gorras</li>
+                                <li>Zapatos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Fitness/ Gimnasio <span>|</span>
+                            <ul class="desplegable">
+                                <li>Zapatillas</li>
+                                <li>Sudaderas</li>
+                                <li>Gorras</li>
+                                <li>Zapatos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Running <span>|</span>
+                            <ul class="desplegable">
+                                <li>Zapatillas</li>
+                                <li>Sudaderas</li>
+                                <li>Gorras</li>
+                                <li>Zapatos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Futbol <span>|</span>
+                            <ul class="desplegable">
+                                <li>Zapatillas</li>
+                                <li>Sudaderas</li>
+                                <li>Gorras</li>
+                                <li>Zapatos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Ciclismo <span>|</span>
+                            <ul class="desplegable">
+                                <li>Zapatillas</li>
+                                <li>Sudaderas</li>
+                                <li>Gorras</li>
+                                <li>Zapatos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Outdoor <span>|</span>
+                            <ul class="desplegable">
+                                <li>Zapatillas</li>
+                                <li>Sudaderas</li>
+                                <li>Gorras</li>
+                                <li>Zapatos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            + Deportes <span>|</span>
+                            <ul class="desplegable">
+                                <li>Zapatillas</li>
+                                <li>Sudaderas</li>
+                                <li>Gorras</li>
+                                <li>Zapatos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Electrónica Deportiva <span>|</span>
+                            <ul class="desplegable">
+                                <li>Zapatillas</li>
+                                <li>Sudaderas</li>
+                                <li>Gorras</li>
+                                <li>Zapatos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Marcas <span>|</span>
+                            <ul class="desplegable">
+                                <li>Zapatillas</li>
+                                <li>Sudaderas</li>
+                                <li>Gorras</li>
+                                <li>Zapatos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Movilidad Urbana
+                            <ul class="desplegable">
+                                <li>Zapatillas</li>
+                                <li>Sudaderas</li>
+                                <li>Gorras</li>
+                                <li>Zapatos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main id="main" class="row">
+            <!--Carrousel-->
+            <div class="col-12 carrouselImagenes">
+                <div id="recipeCarousel" class="carousel slide carrouselFila" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-1">
+                                <img src="img/adidas.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-1">
+                                <img src="img/Amazfit.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-1">
+                                <img src="img/Champion.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-1">
+                                <img src="img/Disney.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-1">
+                                <img src="img/Fila.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-1">
+                                <img src="img/Fitbit.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-1">
+                                <img src="img/Nike.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-1">
+                                <img src="img/Xiaomi.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-1">
+                                <img src="img/Marvel.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-1">
+                                <img src="img/NewBalance.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-1">
+                                <img src="img/Asics.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-1">
+                                <img src="img/Garmin.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oferta1">
+            
+                <a class="enlaces" href="#">
+                    PARA ELLAS 🠖
+                </a>
+                <a class="enlaces" href="#">
+                    PARA ELLOS 🠖
+                </a>
+                <a class="enlaces" href="#">
+                    PARA NIÑ@S 🠖
+                </a>
+                <a class="enlaces" href="#">
+                    PARA TODOS 🠖
+                </a>
+            
+            </div>
+            <div class="oferta2">
+                <div class="enlaceOferta2">
+                    <div class="negrita">FLECHAZOS</div>
+                    <div class="negrita2">DEPORTIVOS</div>
+                    <div class="normal">REGALAZOS PARA DECÍRSELO CON DEPORTE</div><br><br><br>
+                    <div class="filaEnlacesRosa">
+                        <a class="enlacesRosa" href="#">
+                            PARA ELLA 🠖
+                        </a>
+                        <a href="#" class="enlacesRosa">
+                            PARA ÉL 🠖
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="oferta3">
+                <div class="todo">
+                    <div class="fila">
+                        <div class="zapatillas">ZAPATILLAS CASUAL</div>
+                        <div class="normal">En sneakers eres imparable</div>
+                        <div class="boton">
+                            <a href="#" class="botonNegro">DESCUBRE LA SELECCION 🠖</a>
+                        </div>
+                    </div>
+                    
+                    <div class="marcas"><a href="#"><img src="img/Converse.png" alt=""></a></div>
+                    <div class="marcas"><a href=""><img src="img/Vans.png" alt=""></a></div>
+                    <div class="marcas"><a href=""><img src="img/Nike.png" alt=""></a></div>
+                    <div class="marcas"><a href=""><img src="img/adidas.png" alt=""></a></div>
+                </div>
+            </div>
+            <div class="zapatos">
+                <div class="row d-flex flex-wrap mt-4 px-4 justify-content-center">
+                    <div class="card col-sm-5 col-md-2 col-lg-2 col-xl-2 me-2 border border-0">
+                        <img src="img/zapato1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Nike Air Max Alpha</h5>
+                          <p class="card-text">Zapatillas Hombre</p>
+                          <p class="card-text fw-bold">54,99 €</p>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="card col-sm-5 col-md-2 col-lg-2 col-xl-2 me-2 border border-0">
+                        <img src="img/zapato2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Max Alpha</h5>
+                            <p class="card-text">Zapatillas Hombre</p>
+                            <p class="card-text fw-bold">54,99 €</p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                    </div>
+                    <div class="card col-sm-3 col-md-2 col-lg-2 col-xl-2 me-2 border border-0">
+                        <img src="img/zapato3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Max Alpha</h5>
+                            <p class="card-text">Zapatillas Hombre</p>
+                            <p class="card-text fw-bold">54,99 €</p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                    </div>
+                    <div class="card col-sm-3 col-md-2 col-lg-2 col-xl-2 me-2 border border-0">
+                        <img src="img/zapato4.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Max Alpha</h5>
+                            <p class="card-text">Zapatillas Hombre</p>
+                            <p class="card-text fw-bold">54,99 €</p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                    </div>
+                    <div class="card col-sm-3 col-md-2 col-lg-2 col-xl-2 me-2 border border-0">
+                        <img src="img/zapato5.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Max Alpha</h5>
+                            <p class="card-text">Zapatillas Hombre</p>
+                            <p class="card-text fw-bold">54,99 €</p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-12 col-md-9 border border-success border-0 border-end">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item border border-0 bg-dark fw-bold mb-2">Atención al cliente</li>
+                                    <li class="list-group-item border border-0 bg-dark">Seguimiento de tu pedido</li>
+                                    <li class="list-group-item border border-0 bg-dark">Medios de pago</li>
+                                    <li class="list-group-item border border-0 bg-dark">Envíos</li>
+                                    <li class="list-group-item border border-0 bg-dark">Devoluciones y cambios</li>
+                                    <li class="list-group-item border border-0 bg-dark">Tarjetas regalo</li>
+                                    <li class="list-group-item border border-0 bg-dark">Baja comunicaciones</li>
+                                    <li class="list-group-item border border-0 bg-dark">Configuración de cookies</li>
+                                    <li class="list-group-item border border-0 bg-dark">Contacto</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item border border-0 bg-dark fw-bold mb-2">Promociones</li>
+                                    <li class="list-group-item border border-0 bg-dark">-10% de dto. para Estudiantes</li>
+                                    <li class="list-group-item border border-0 bg-dark">Condiciones generales</li>
+                                    <li class="list-group-item border border-0 bg-dark">Recomienda y Gana 20€</li>
+                                    <li class="list-group-item border border-0 bg-dark">Opina y gana 50€</li>
+                                    <li class="list-group-item border border-0 bg-dark">Condiciones Reward Booking.com</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item border border-0 bg-dark fw-bold mb-2">Información general</li>
+                                    <li class="list-group-item border border-0 bg-dark">Consejos de deporte</li>
+                                    <li class="list-group-item border border-0 bg-dark">Condiciones de uso</li>
+                                    <li class="list-group-item border border-0 bg-dark">Aviso Legal</li>
+                                    <li class="list-group-item border border-0 bg-dark">Privacidad</li>
+                                    <li class="list-group-item border border-0 bg-dark">Política de Cookies</li>
+                                    <li class="list-group-item border border-0 bg-dark">Plataforma UE Resolución de Litigios en Línea</li>
+                                    <li class="list-group-item border border-0 bg-dark">Sitemap</li>
+                                    <li class="list-group-item border border-0 bg-dark">Segunda vida textil</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-5 col-md-3">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item border border-0 bg-dark fw-bold mb-2">Sprinter</li>
+                                    <li class="list-group-item border border-0 bg-dark">Empresa</li>
+                                    <li class="list-group-item border border-0 bg-dark">Información no financiera</li>
+                                    <li class="list-group-item border border-0 bg-dark">Sprinter Pass</li>
+                                    <li class="list-group-item border border-0 bg-dark">Sprinter Marketplace</li>
+                                    <li class="list-group-item border border-0 bg-dark">Información Empresa</li>
+                                    <li class="list-group-item border border-0 bg-dark">Trabaja en Sprinter</li>
+                                    <li class="list-group-item border border-0 bg-dark">Programa de afiliados</li>
+                                    <li class="list-group-item border border-0 bg-dark">Glosario deportivo</li>
+                                    <li class="list-group-item border border-0 bg-dark">Términos y Condiciones de Sprinter Club</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm-6 col-md-5 bg-dark justify-content-center">
+                                <img src="img/sprinterGris.png" alt=""><br>
+                                2023. Todos los derechos reservados. <span class="fw-bold">Sprinter</span>
+                            </div>
+                            <div class="col-sm-1 col-md-1"><img src="img/eKomi.png" alt=""></div>
+                            <div class="col-sm-5 col-md-5 pt-2">
+                                <span class="fw-bold">Valoracion eKomi</span><br>
+                                <i class="bi bi-star-fill pequeno"></i>
+                                <i class="bi bi-star-fill pequeno"></i>
+                                <i class="bi bi-star-fill pequeno"></i>
+                                <i class="bi bi-star-fill pequeno"></i>
+                                <i class="bi bi-star-fill pequeno"></i> 
+                                <span class="pequeno grisClaro">4.56 / 5</span>
+                                <div class="fila">
+                                    <span class="masPequeno grisClaro">Cálculo sobre un total de 113476 opiniones</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 border border-success border-0 text-center justify-content-center">
+                        <div class="row fw-bold">
+                            <div class="col-12 text-center">
+                                Social Media
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="me-2"><i class="bi bi-youtube"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="row fw-bold mt-4">
+                            <div class="col-12 text-center">
+                                Descarga nuestra App :)
+                            </div>
+                        </div>
+                        <div class="row mt-2 pb-4 border border-success border-0 border-bottom border-1">
+                            <div class="col-12">
+                                <a href="#"><img src="img/googlePlay.png" alt=""></a>
+                                <a href="#"><img src="img/IOS.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row fw-bold mt-4">
+                            <div class="col-12 text-center">
+                                Metodos de Pago
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <a href="#"><img src="img/visa.webp" class="imagenes" alt=""></a>
+                                <a href="#"><img src="img/mastercard.webp" class="imagenes" alt=""></a>
+                                <a href="#"><img src="img/paypal.webp" class="imagenes" alt=""></a>
+                                <a href="#"><img src="img/klarna.webp" class="imagenes" alt=""></a>
+                                <a href="#"><img src="img/oney.webp" class="imagenes" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row fw-bold mt-4">
+                            <div class="col-12 text-center">
+                                Web pago con seguro
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <a href="#"><img src="img/seguro1.png" class="imagenesSeguro me-2" alt=""></a>
+                                <a href="#"><img src="img/seguro2.png" class="imagenesSeguro me-2" alt=""></a>
+                                <a href="#"><img src="img/seguro3.webp" class="imagenesSeguro" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+                
+            
+        </footer>
+
+        
+    </div>
+
+    
+    <script>
+        let items = document.querySelectorAll('.carousel .carousel-item')
+
+        items.forEach((el) => {
+            const minPerSlide = 12
+            let next = el.nextElementSibling
+            for (var i=1; i<minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

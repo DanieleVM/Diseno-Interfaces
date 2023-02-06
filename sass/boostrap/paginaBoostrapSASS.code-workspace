@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "../../Asignaturas/Diseño de Interfaces Web/Tema 4/paginaBoostrapSASS"
+		},
+		{
+			"path": "../.github"
+		},
+		{
+			"path": "../build"
+		},
+		{
+			"path": "../dist"
+		},
+		{
+			"path": "../js"
+		},
+		{
+			"path": "../nuget"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../site"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,222 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "roboto", serif;
+}
+
+header{
+    background-color: gray;
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .filaVerdeClaro{
+        @include centrarContenidoFlex;
+        flex-wrap: wrap;
+        margin: 0px 0px;
+        flex: 1 1 100%;
+        height: 35px;
+        background-color: $verdeClaro;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .filaVerdeOscuro{
+        flex: 1 1 100%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 45px;
+        background-color: $verdeOscuro;
+        color: $blanco;
+        font-size: 15px;
+
+        .envios{
+            @include centrarContenidoFlex();
+            flex: 1 1 50%;
+        }
+
+        .cuentas{
+            @include centrarContenidoFlex();
+            flex: 1 1 50%;
+            letter-spacing: 20px;
+            font-size: 25px;
+
+            .gris{
+                color: $grisOscuro;
+            }
+
+            .desplegable{
+                letter-spacing: normal; 
+                color: gray;
+
+                ul{
+                    width: 350px;
+                }
+
+                #inicioSesion{
+                    width: 100%;
+                    height: 50px;
+                    background-color: $verdeOscuro;
+                    border: 0px;
+                    color: $blanco;
+                }
+            }
+
+            a{color: $blanco}
+        }
+    }
+
+    .logoBuscador{
+        flex: 1 1 100%;
+        @include centrarContenidoFlex();
+        flex-wrap: wrap;
+        height: 140px;
+        background-color: $blanco;
+
+        .fila{
+            display: flex;
+            width: 65%;
+
+            .logo{
+                flex: 1 1 40%;
+
+                img{
+                    width: 250px;
+                }
+            }
+
+            .buscador{
+                flex: 1 1 60%;
+                display: flex;
+                align-items: center;
+
+                input{
+                    width: 80%;
+                    border: 0;
+                    border-bottom: 1px solid black;
+                    padding-bottom: 10px;
+                }
+
+                input:focus{
+                    outline: none;
+                }
+
+                a{
+                    color: black;
+                    margin-top: 1px;
+                }
+
+            }
+
+        }
+
+        .categorias{
+            display: flex;
+            flex: 1 1 100%;
+            color: black;
+            @include centrarContenidoFlex();
+            
+            ul{
+                list-style: none;
+                font-weight: bolder;
+                margin: 0px;
+                padding: 0px 10px;
+                padding-bottom: 10px;
+
+                li{
+                    
+                    .desplegable{
+                        display: none;
+
+                        .desplegable:hover{
+                            display: inline;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .categoriasPequenas{
+            flex: 1 1 100%;
+            height: 35px;
+            color: black;
+            background-color: #F5F5F5;
+            @include centrarContenidoFlex();
+
+            ul{
+                list-style: none;
+                font-size: 12px;
+                margin: 0px;
+                padding: 0px 13px;
+                
+                li{
+
+                    span{margin-left: 30px;}
+
+                    .desplegable{
+                        display: none;
+                        background-color: $blanco;
+                        margin-bottom: -120px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        border-radius: 10px;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+                        li{
+                            margin-top: 10px;
+                        }
+                    }
+                    
+                }
+
+                li:hover .desplegable{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1857px){
+    .categoriasPequenas{
+        ul{
+            span{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1355px){
+    .categoriasPequenas{
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+
+        ul{
+            padding: 40px 13px;
+            margin-left: -30px;
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    
+    .logoBuscador{
+        justify-content: start;
+    }
+
+    .categoriasPequenas{
+        ul{
+            
+            span{
+
+                display: none;
+            }
+        }
+    }
+}
